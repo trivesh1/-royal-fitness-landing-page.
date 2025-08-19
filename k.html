@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Routine Generator</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercise Routine Generator</h1>
+
+        <!-- Workout Goal Selection -->
+        <div class="goal-selection">
+            <label for="workoutGoal">Select Your Goal:</label>
+            <select id="workoutGoal">
+                <option value="strength">Strength</option>
+                <option value="cardio">Cardio</option>
+                <option value="flexibility">Flexibility</option>
+            </select>
+            <button onclick="generateRoutine()">Generate Routine</button>
+        </div>
+
+        <!-- Generated Routine Display -->
+        <div class="routine-display" id="routineDisplay">
+            <h2>Workout Routine</h2>
+            <ul id="routineList"></ul>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
